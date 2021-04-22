@@ -8,7 +8,7 @@ router.post('/login', async (req, resp) => {
     let email = req.body.email;
     let password = req.body.password;
     let user = await User.find().where({email: email});
-    console.log(user);
+    //console.log(user);
     if(user.length > 0){
         let comparisonResult = await bcrypt.compare(password, user[0].password);
         if (comparisonResult){

@@ -39,7 +39,7 @@ function landmarkGeocode() {
 function showMap (result) {
     
     let location = result.items;
-    console.log(location);
+    //console.log(location);
     // Obtain the default map types from the platform object:
     let defaultLayers = platform.createDefaultLayers();  
     // Instantiate (and display) a map object:
