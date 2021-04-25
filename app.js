@@ -14,7 +14,7 @@ let auth = require('./controllers/auth');
 
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost/travels', { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect('mongodb+srv://dbUser:dbUser2037@mycluster.j5cp2.mongodb.net/travels', { useUnifiedTopology: true, useNewUrlParser: true });
 app.use(express.json());
 
 let imageStorage = multer.diskStorage({

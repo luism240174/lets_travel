@@ -8,8 +8,11 @@ let authMiddleware = require('../middleware/auth');
 
 
 router.get('/', async (req, resp) => {
-    let posts =  await Post.find();
-    resp.send(posts); 
+   
+        let posts =  await Post.find();
+        resp.send(posts);    
+   
+     
 })
 
 router.get('/:id', async (req, resp) => {
